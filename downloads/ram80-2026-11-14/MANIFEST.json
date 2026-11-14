@@ -1,0 +1,49 @@
+{
+  "edition": "RAM80 software preview 2026-11-14",
+  "game_revision": "Impossible Mission REV8R",
+  "manual_edition": "2.0 RAM80",
+  "guest_RAM_bytes": 81920,
+  "cartridge_RAM_bytes": 65536,
+  "internal_RAM_bytes": 16384,
+  "additional_sprite_or_modem_RAM_bytes": 0,
+  "files": [
+    {
+      "name": "plus64-ram80-rev8r-completo.zip",
+      "bytes": 11449260,
+      "sha256": "c3923da7f53f5944f0409d26255ee6d79135e13977556d05f3d3c9b1753c1c17"
+    },
+    {
+      "name": "plus64-manuale-sviluppatore-ram80-it-en.zip",
+      "bytes": 1545943,
+      "sha256": "7e1e10aa0c1ee431aec270adae7d2d826c3bb2f9c39207a8f5ff0a00d1087d88"
+    },
+    {
+      "name": "PLUS64_RAM80_Developer_Manual_EN.pdf",
+      "bytes": 388428,
+      "sha256": "654b93840bebca2046473b1b0752113ca443d7e39db99101886173c99b62c0de"
+    },
+    {
+      "name": "Manuale_Sviluppatore_PLUS64_RAM80_IT.pdf",
+      "bytes": 398920,
+      "sha256": "15e13eca081f486dd8adcfb0cf7b7d2092fa99ffc4ec2f7a247b5789a7bf3506"
+    },
+    {
+      "name": "plus64-im-rev8r-prove.zip",
+      "bytes": 307601,
+      "sha256": "c18ae819f2e7a112e0eb3b8afcd354a9162fdf0abf3b42480feb017d25cd46ff"
+    },
+    {
+      "name": "plus64-scenari-rev8r-sorgenti.tar.xz",
+      "bytes": 10107436,
+      "sha256": "e2e414ea6ec86ea29aa4e29969fff552b37b8bb7e79db092b497e07f92eaf19a"
+    }
+  ],
+  "executable_sha256": "08d3e87f84140fe13014213beb32bf7635de12b715769d995efc0658bf08ddfa",
+  "tests": "Linux C16/Plus4 and Win64 under Wine; no native Windows or physical hardware qualification; no naturally completed full mission claimed",
+  "manual_languages": [
+    "Italian (complete)",
+    "English (complete)"
+  ],
+  "manual_pages_each": 44,
+  "quick_reference_pages_each": 6
+}
