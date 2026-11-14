@@ -1,0 +1,66 @@
+name: Publish RAM80 preview
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-ram80-preview.yml']
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: publish-ram80-preview-2026-11-14
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'abattiloro78-codex/plus64-downloads' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: abattiloro78-codex/plus64-downloads
+      RELEASE_TAG: ram80-preview-2026-11-14
+      RELEASE_TARGET: 98b25de36993d203e8ab02cb6cdbcbb05004e5a1
+    steps:
+      - name: Verify and publish the existing public packages
+        shell: bash
+        env:
+          RELEASE_NOTES: |-
+            This software preview brings the Commodore 16 and Plus/4 onto the same **80 KiB memory budget: 64 KiB cartridge RAM plus 16 KiB internal RAM**. Sprite/cache data, audio and modem buffers share those same 81,920 bytes.
+            
+            The kit includes the modified Windows VICE runtime, graphically enhanced **Impossible Mission REV8R**, **PRISM INVADERS** and two SDK demonstrations. Impossible Mission reuses the original C64 code and adds colour and shading to sprites, furniture and scenery.
+            
+            - **To run:** download `plus64-ram80-rev8r-completo.zip`, extract it into a new writable folder and open `AVVIA_PLUS64.cmd`. Use the supplied modified VICE executable, not stock VICE.
+            - **To program:** download `plus64-manuale-sviluppatore-ram80-it-en.zip`. It contains the complete updated technical manual in Italian and English, quick references, editable sources, SDK sources and assembled examples. The two standalone manual PDFs contain the same full manuals.
+            - **GPL sources:** `plus64-scenari-rev8r-sorgenti.tar.xz` contains the corresponding emulator sources and build recipes; it is not required to run the games.
+            
+            Checks include Linux builds running the C16 and Plus/4 profiles and the Windows executable under Wine. Native Windows and physical hardware qualification are not claimed. This remains a software prototype: the physical circuitry, data-access path, video synchronization and memory contention still require hardware design and validation.
+        run: |
+          set -euo pipefail
+          mkdir release-assets
+          cd release-assets
+          cat > SHA256SUMS.txt <<'CHECKSUMS'
+          c3923da7f53f5944f0409d26255ee6d79135e13977556d05f3d3c9b1753c1c17  plus64-ram80-rev8r-completo.zip
+          7e1e10aa0c1ee431aec270adae7d2d826c3bb2f9c39207a8f5ff0a00d1087d88  plus64-manuale-sviluppatore-ram80-it-en.zip
+          654b93840bebca2046473b1b0752113ca443d7e39db99101886173c99b62c0de  PLUS64_RAM80_Developer_Manual_EN.pdf
+          15e13eca081f486dd8adcfb0cf7b7d2092fa99ffc4ec2f7a247b5789a7bf3506  Manuale_Sviluppatore_PLUS64_RAM80_IT.pdf
+          e2e414ea6ec86ea29aa4e29969fff552b37b8bb7e79db092b497e07f92eaf19a  plus64-scenari-rev8r-sorgenti.tar.xz
+          CHECKSUMS
+          asset_base='https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/98b25de36993d203e8ab02cb6cdbcbb05004e5a1/downloads/ram80-2026-11-14'
+          while read -r digest filename; do
+            curl --fail --location --retry 2 --connect-timeout 20 "$asset_base/$filename" --output "$filename"
+          done < SHA256SUMS.txt
+          sha256sum --check SHA256SUMS.txt
+          printf '%s\n' "$RELEASE_NOTES" > RELEASE_NOTES.md
+          gh release create "$RELEASE_TAG" \
+            --repo "$GH_REPO" \
+            --target "$RELEASE_TARGET" \
+            --title 'plus/64 — RAM80 Software Preview' \
+            --notes-file RELEASE_NOTES.md \
+            --prerelease --draft \
+            'plus64-ram80-rev8r-completo.zip' \
+            'plus64-manuale-sviluppatore-ram80-it-en.zip' \
+            'PLUS64_RAM80_Developer_Manual_EN.pdf' \
+            'Manuale_Sviluppatore_PLUS64_RAM80_IT.pdf' \
+            'plus64-scenari-rev8r-sorgenti.tar.xz' \
+            SHA256SUMS.txt
+          gh release edit "$RELEASE_TAG" --repo "$GH_REPO" --draft=false --prerelease=true
