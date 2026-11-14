@@ -1,17 +1,19 @@
 # plus/64 RAM80 software preview
 
+[**Release page and downloadable assets**](https://github.com/abattiloro78-codex/plus64-downloads/releases/tag/ram80-preview-2026-11-14)
+
 Updated 14 November 2026. This is a software prototype for a common Commodore 16 and Plus/4 platform: **64 KiB cartridge RAM + 16 KiB internal RAM = 81,920 bytes**. Sprite/cache, audio and modem payloads share that budget.
 
 ## Downloads
 
 | File | Contents |
 | --- | --- |
-| [Complete Windows kit](https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/main/downloads/ram80-2026-11-14/plus64-ram80-rev8r-completo.zip) | Modified VICE executable, required DLLs, enhanced Impossible Mission REV8R, PRISM INVADERS and two SDK demonstrations. |
-| [Technical developer manual and SDK, Italian and English](https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/main/downloads/ram80-2026-11-14/plus64-manuale-sviluppatore-ram80-it-en.zip) | Full 44-page manual and 6-page quick reference in each language, editable sources, API JSON, current source excerpts and reproducible assembly examples. |
-| [English manual PDF](https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/main/downloads/ram80-2026-11-14/PLUS64_RAM80_Developer_Manual_EN.pdf) | Complete English copy, not an abridged guide. |
-| [Italian manual PDF](https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/main/downloads/ram80-2026-11-14/Manuale_Sviluppatore_PLUS64_RAM80_IT.pdf) | Complete updated Italian manual. |
-| [Full modified VICE GPL sources](https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/main/downloads/ram80-2026-11-14/plus64-scenari-rev8r-sorgenti.tar.xz) | Corresponding emulator sources and build recipes. Optional for running the games. |
-| [SHA256 checksums](SHA256SUMS.txt) | Digests of all downloadable files. |
+| [Complete Windows kit](https://github.com/abattiloro78-codex/plus64-downloads/releases/download/ram80-preview-2026-11-14/plus64-ram80-rev8r-completo.zip) | Modified VICE executable, required DLLs, enhanced Impossible Mission REV8R, PRISM INVADERS and two SDK demonstrations. |
+| [Technical developer manual and SDK, Italian and English](https://github.com/abattiloro78-codex/plus64-downloads/releases/download/ram80-preview-2026-11-14/plus64-manuale-sviluppatore-ram80-it-en.zip) | Full 44-page manual and 6-page quick reference in each language, editable sources, API JSON, current source excerpts and reproducible assembly examples. |
+| [English manual PDF](https://github.com/abattiloro78-codex/plus64-downloads/releases/download/ram80-preview-2026-11-14/PLUS64_RAM80_Developer_Manual_EN.pdf) | Complete English copy, not an abridged guide. |
+| [Italian manual PDF](https://github.com/abattiloro78-codex/plus64-downloads/releases/download/ram80-preview-2026-11-14/Manuale_Sviluppatore_PLUS64_RAM80_IT.pdf) | Complete updated Italian manual. |
+| [Full modified VICE GPL sources](https://github.com/abattiloro78-codex/plus64-downloads/releases/download/ram80-preview-2026-11-14/plus64-scenari-rev8r-sorgenti.tar.xz) | Corresponding emulator sources and build recipes. Optional for running the games. |
+| [SHA256 checksums](https://github.com/abattiloro78-codex/plus64-downloads/releases/download/ram80-preview-2026-11-14/SHA256SUMS.txt) | Digests of all downloadable files. |
 
 ## Running the software
 
