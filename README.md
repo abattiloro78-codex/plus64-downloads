@@ -2,9 +2,9 @@
 
 Public software previews of the plus/64 project for Commodore 16 and Plus/4.
 
-## Usagi Yojimbo — 23 November 2026
+## Usagi Yojimbo — R8, 23 November 2026
 
-[Download the complete Usagi ZIP](https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/main/downloads/usagi-2026-11-23/plus64-usagi-yojimbo-2026-11-23.zip)
+[Download the complete Usagi ZIP](https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/main/downloads/usagi-2026-11-23/plus64-usagi-yojimbo-2026-11-23-r8.zip)
 
 Technical developer manual: [Italian PDF](https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/main/downloads/usagi-2026-11-23/Manuale_Sviluppatore_PLUS64_RAM80_IT.pdf) · [English PDF](https://raw.githubusercontent.com/abattiloro78-codex/plus64-downloads/main/downloads/usagi-2026-11-23/PLUS64_RAM80_Developer_Manual_EN.pdf)
 
