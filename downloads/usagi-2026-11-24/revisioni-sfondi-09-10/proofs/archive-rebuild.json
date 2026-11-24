@@ -1,0 +1,15 @@
+{
+  "status": "PASS-extracted-ZIP-python3-S-forward-rebuild-byte-exact",
+  "D64_sha256": "3beda9eed3208546833ffbbc6b64a2baff16547d6bd7b75539431c0aedfe9d7d",
+  "MAIN_sha256": "907eda2d36ae74992d244612fa8cac01a55b4e11f9e6222e2367456cd48454b0",
+  "all17_background_packets_exact": true,
+  "source_and_package_manifests_verified": true,
+  "zip_CRC_verified": true,
+  "guest_bytes": 81920,
+  "external_workspace_data_dependencies": 0,
+  "external_requirements": [
+    "Python3.12+ standard library",
+    "xa2.4.1 assembler"
+  ],
+  "runtime_playtest": false
+}

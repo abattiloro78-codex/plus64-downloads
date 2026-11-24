@@ -1,0 +1,83 @@
+{
+  "status": "PASS-focused-scenes09-10-source-and-D64-integration",
+  "MAIN_sha256": "907eda2d36ae74992d244612fa8cac01a55b4e11f9e6222e2367456cd48454b0",
+  "D64_sha256": "3beda9eed3208546833ffbbc6b64a2baff16547d6bd7b75539431c0aedfe9d7d",
+  "parent_MAIN_sha256": "907eda2d36ae74992d244612fa8cac01a55b4e11f9e6222e2367456cd48454b0",
+  "parent_D64_sha256": "61eec9c31eb3cfdc83386f50c5932eb30d490dde5344dd0c3d072ea1caec67b2",
+  "changed_disk_files": [
+    "B09",
+    "B10"
+  ],
+  "disk_file_count": 20,
+  "other_18_disk_files_exact": true,
+  "other_15_background_packets_exact": true,
+  "scene01_approved_trees_exact": true,
+  "current_C_render_proofs": {
+    "9": "PASS-scene09-opaque-undergrowth-black-to-green-real-C-render",
+    "10": "PASS-scene10-exact-approved-scene01-tree-materials-real-C-render"
+  },
+  "new_packet_bytes": {
+    "B09": 4762,
+    "B10": 2703
+  },
+  "maximum_packet_bytes": 7376,
+  "packet_slot_capacity": 7376,
+  "guest_main_bytes": 65536,
+  "guest_AUX_bytes": 16384,
+  "guest_bytes": 81920,
+  "additional_guest_bytes": 0,
+  "unchanged_program_sprite_AUX_VM_binaries": [
+    "art/framebank-method1.bin",
+    "art/framebank-method2.bin",
+    "art/sprite_vm.bin",
+    "link/background_camera.bin",
+    "link/background_camera_d0.bin",
+    "link/background_camera_f0.bin",
+    "link/background_config.bin",
+    "link/background_phase.bin",
+    "link/banked-assets.bin",
+    "link/cold-low-memory.bin",
+    "link/cold-main.bin",
+    "link/materials.bin",
+    "link/mirror_cache.bin",
+    "link/native-main.bin",
+    "link/owner_cache_invalidate.bin",
+    "link/publisher_mirror.bin",
+    "link/publisher_validate.bin",
+    "link/scene_capture.bin",
+    "link/scene_state.bin",
+    "link/scheduler_post_arm.bin",
+    "link/source_upload_guard.bin",
+    "link/transition_ROM_stub.bin",
+    "link/transition_loader.bin",
+    "link/vm-full-initial-aux.bin",
+    "link/vm-low-payload.bin",
+    "baseline/banked-assets.bin",
+    "baseline/materials.bin",
+    "baseline/native-main.bin",
+    "baseline/vm-full-initial-aux.bin",
+    "baseline/vm-low-payload.bin",
+    "art/sprite_vm.method2.p64z",
+    "art/sprite_vm.p64z"
+  ],
+  "source_files": 94,
+  "source_files_changed": [
+    "EXPECTED_FINAL.json",
+    "README.en.md",
+    "README.md",
+    "SOURCE_MANIFEST.json",
+    "art/backgrounds/SOURCE_ROUNDTRIP_PROOF.json",
+    "art/backgrounds/recipes/scene09.json",
+    "art/backgrounds/recipes/scene10.json"
+  ],
+  "new_source_proof_files": [
+    "art/backgrounds/SCENE09_REVIEW_PROOF.json",
+    "art/backgrounds/SCENE10_REVIEW_PROOF.json",
+    "art/backgrounds/SOURCE_ROUNDTRIP_PARENT_SCENES09_10.json"
+  ],
+  "all_source_manifest_files_verified": true,
+  "full_forward_rebuild_python_no_site": true,
+  "runtime_modified": false,
+  "native_Windows_or_full_campaign_playtest_performed": false,
+  "qualification_scope": "Focused asset-only integration. Exact MAIN farmer005 is preserved; prior MAIN005 observations are historical context and not a new gameplay qualification of this disk."
+}

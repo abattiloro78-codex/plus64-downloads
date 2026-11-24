@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "base_MAIN_sha256": "907eda2d36ae74992d244612fa8cac01a55b4e11f9e6222e2367456cd48454b0",
+  "guest_bytes": 81920,
+  "packet_slot": 7376,
+  "scenes": {
+    "9": {
+      "changed_pixels": 12652,
+      "allowed_pixels": 12652,
+      "raw_bytes": 11482,
+      "raw_sha256": "bc3cff10d5c981fd5fb80d17eadf9c07e43340629dcbde269194ee85967d34e7",
+      "packet_bytes": 4762,
+      "packet_sha256": "51bca3545fb001f44417aa5764ceddd835331eb5629871eba26415f4fe4258cc",
+      "slot_headroom": 2614,
+      "recipe_repack_exact": true,
+      "source_geometry_exact": true,
+      "P0_air_exact": true,
+      "nonselected_pixels_exact": true,
+      "counts_per_stand": [
+        4628,
+        2314,
+        5710
+      ],
+      "output_colours": [
+        5,
+        21
+      ],
+      "wood_and_distant_forest_exact": true,
+      "C21_MAIN907_initial_pixel_errors": 0,
+      "C_replayed_pixels": 632000,
+      "C_pixel_errors": 0,
+      "C_mask_errors": 0
+    },
+    "10": {
+      "changed_pixels": 13458,
+      "allowed_pixels": 29974,
+      "raw_bytes": 4724,
+      "raw_sha256": "07beca25f1dd73579b6fe144d4872323d6a28e77650817e5c61b46ccf12a1d71",
+      "packet_bytes": 2703,
+      "packet_sha256": "2e470c6da61283d795d70b36abb97a6bc3a98f0ab3850fe12ae2a23092cd40d0",
+      "slot_headroom": 4673,
+      "recipe_repack_exact": true,
+      "source_geometry_exact": true,
+      "P0_air_exact": true,
+      "nonselected_pixels_exact": true,
+      "tree_instances": 12,
+      "exact_scene01_material_pixels": true,
+      "flower_pixels_exact": true,
+      "flower_pixels": 9714,
+      "C21_MAIN907_initial_pixel_errors": 0,
+      "C_replayed_pixels": 560000,
+      "C_pixel_errors": 0,
+      "C_mask_errors": 0
+    }
+  }
+}

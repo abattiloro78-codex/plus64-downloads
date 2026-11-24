@@ -1,0 +1,254 @@
+{
+  "status": "PASS-scene10-exact-approved-scene01-tree-materials-real-C-render",
+  "scene": 10,
+  "tree_instances": 12,
+  "objects": [
+    {
+      "template": 1,
+      "xy": [
+        200,
+        64
+      ],
+      "approved_scene01_xy": [
+        280,
+        64
+      ],
+      "selected_material_pixels": 2030,
+      "changed_pixels": 829,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 2,
+      "xy": [
+        480,
+        48
+      ],
+      "approved_scene01_xy": [
+        320,
+        48
+      ],
+      "selected_material_pixels": 2348,
+      "changed_pixels": 1057,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 3,
+      "xy": [
+        560,
+        56
+      ],
+      "approved_scene01_xy": [
+        400,
+        56
+      ],
+      "selected_material_pixels": 2878,
+      "changed_pixels": 1528,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 4,
+      "xy": [
+        680,
+        48
+      ],
+      "approved_scene01_xy": [
+        520,
+        48
+      ],
+      "selected_material_pixels": 2412,
+      "changed_pixels": 1101,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 5,
+      "xy": [
+        840,
+        64
+      ],
+      "approved_scene01_xy": [
+        800,
+        64
+      ],
+      "selected_material_pixels": 3000,
+      "changed_pixels": 742,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 2,
+      "xy": [
+        1240,
+        48
+      ],
+      "approved_scene01_xy": [
+        320,
+        48
+      ],
+      "selected_material_pixels": 2348,
+      "changed_pixels": 1057,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 3,
+      "xy": [
+        1320,
+        56
+      ],
+      "approved_scene01_xy": [
+        400,
+        56
+      ],
+      "selected_material_pixels": 2878,
+      "changed_pixels": 1528,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 4,
+      "xy": [
+        1440,
+        48
+      ],
+      "approved_scene01_xy": [
+        520,
+        48
+      ],
+      "selected_material_pixels": 2412,
+      "changed_pixels": 1101,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 1,
+      "xy": [
+        1560,
+        64
+      ],
+      "approved_scene01_xy": [
+        280,
+        64
+      ],
+      "selected_material_pixels": 2030,
+      "changed_pixels": 829,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 2,
+      "xy": [
+        1720,
+        48
+      ],
+      "approved_scene01_xy": [
+        320,
+        48
+      ],
+      "selected_material_pixels": 2348,
+      "changed_pixels": 1057,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 3,
+      "xy": [
+        1800,
+        56
+      ],
+      "approved_scene01_xy": [
+        400,
+        56
+      ],
+      "selected_material_pixels": 2878,
+      "changed_pixels": 1528,
+      "exact_approved_material_pixels": true
+    },
+    {
+      "template": 4,
+      "xy": [
+        1920,
+        48
+      ],
+      "approved_scene01_xy": [
+        520,
+        48
+      ],
+      "selected_material_pixels": 2412,
+      "changed_pixels": 1101,
+      "exact_approved_material_pixels": true
+    }
+  ],
+  "style_source": "/workspace/work/usagi-tree-black-007/candidate-002/recipes/scene01.json",
+  "style_source_raw_sha256": "02b77c5c249bba46feca8c90f6871ddebe94c7750bbb284245da8e137be1727d",
+  "base_MAIN_sha256": "907eda2d36ae74992d244612fa8cac01a55b4e11f9e6222e2367456cd48454b0",
+  "base_scene10_raw_sha256": "3cfaee9cc6c82be423c79c5e75b0f5ff0714c37c5402665d7d9dfb85b8ab5e23",
+  "raw_sha256": "07beca25f1dd73579b6fe144d4872323d6a28e77650817e5c61b46ccf12a1d71",
+  "raw_bytes": 4724,
+  "packet_sha256": "2e470c6da61283d795d70b36abb97a6bc3a98f0ab3850fe12ae2a23092cd40d0",
+  "packet_bytes": 2703,
+  "packet_capacity": 7376,
+  "packet_headroom": 4673,
+  "changed_pixels": 13458,
+  "formerly_black_recoloured": 6210,
+  "source_glyphs_font_pairs_unchanged": true,
+  "true_pair0_air_exact": true,
+  "flower_primary_exact": true,
+  "non_tree_pixels_exact": true,
+  "all_original_non_tree_JSON_records_exact": true,
+  "same_tree_source_role_masks_as_scene01": true,
+  "actual_approved_material_pixel_errors": 0,
+  "C21_version": 23,
+  "C_rendered_pixels_per_pass": 560000,
+  "C_renderer_passes": 2,
+  "C_reference_errors": 0,
+  "C_mask_errors": 0,
+  "renderer": "actual C21 and generic P64B C interpreter; not an image mockup",
+  "additional_guest_bytes": 0,
+  "guest_bytes": 81920,
+  "MAIN_modified": false,
+  "platform_modified": false,
+  "other_scenes_modified": false,
+  "curated_base_modified": false,
+  "global_D64_built": false,
+  "published": false,
+  "runtime_playtest_performed": false,
+  "resource_maps": {
+    "fields": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "20": 14,
+      "21": 15,
+      "22": 16,
+      "23": 17
+    },
+    "palettes": {
+      "19": 13,
+      "2": 2,
+      "3": 3,
+      "20": 14,
+      "21": 15,
+      "6": 6,
+      "8": 8,
+      "9": 9,
+      "22": 16,
+      "23": 17,
+      "24": 18
+    },
+    "glyph_selectors": {
+      "11": 3,
+      "12": 4
+    },
+    "clips": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5
+    }
+  }
+}

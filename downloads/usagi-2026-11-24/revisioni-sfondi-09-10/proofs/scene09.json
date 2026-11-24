@@ -1,0 +1,40 @@
+{
+  "status": "PASS-scene09-opaque-undergrowth-black-to-green-real-C-render",
+  "scene": 9,
+  "pixels_changed": 12652,
+  "stand_counts": [
+    4628,
+    2314,
+    5710
+  ],
+  "native_shadow_colours": [
+    "05",
+    "15"
+  ],
+  "source_predicate": {
+    "glyphs": [
+      16,
+      57
+    ],
+    "pair": 2,
+    "ink": 10,
+    "native_ink_attribute": 74,
+    "source_colour": 0,
+    "rows": [
+      96,
+      160
+    ]
+  },
+  "P0_air_wood_flowers_distant_forest_and_all_other_pixels_exact": true,
+  "C_rendered_pixels": 632000,
+  "C_RGB_errors": 0,
+  "C_mask_errors": 0,
+  "packet_bytes": 4762,
+  "packet_sha256": "51bca3545fb001f44417aa5764ceddd835331eb5629871eba26415f4fe4258cc",
+  "raw_sha256": "bc3cff10d5c981fd5fb80d17eadf9c07e43340629dcbde269194ee85967d34e7",
+  "MAIN_or_other_scenes_modified": false,
+  "additional_guest_bytes": 0,
+  "guest_bytes": 81920,
+  "slot_capacity": 7376,
+  "new_C_operators": 0
+}
