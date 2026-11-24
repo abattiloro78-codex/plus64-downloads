@@ -1,0 +1,13 @@
+SFONDI USAGI YOJIMBO — VERSIONE 24 NOVEMBRE 2026
+
+17 layout e varianti, identificati 01–17: non sono 17 livelli consecutivi.
+Le quattro tavole danno una visione generale; i PNG nella cartella panoramas
+contengono l'intera mappa a ingrandimento intero 2x. Per una correzione indica
+il numero e il settore (esempio: 01-C, il ponte). Ogni settore copre 320 pixel.
+
+Ricostruzione degli sfondi del gioco pubblicato usando il suo MAIN e i suoi
+17 pacchetti P64B, con il renderer C reale. Compresi prato aggiornato e alberi
+corretti. Nessun personaggio dinamico. Le nuvole legate alla vista sono
+campionate in viste successive da 320 pixel; questa e' una panoramica composta,
+non una singola schermata dell'emulatore. Ritaglio verticale di gioco y16–183.
+Non cambia alcun file del gioco.
