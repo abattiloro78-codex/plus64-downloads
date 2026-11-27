@@ -1,0 +1,26 @@
+{
+  "status": "PASS-independent-complete-portable-archive-audit",
+  "path": "/workspace/work/usagi-full-package-011/delivery/plus64-usagi-completo-2026-11-27.zip",
+  "bytes": 53362398,
+  "sha256": "cc4e46654471eabe1b295504cd4d75f90965f22ff45e834328f9d5e8fd39bde1",
+  "entries": 359,
+  "CRC": "PASS",
+  "outer_manifest_payload_files_verified": 357,
+  "checksum_lines_verified": 357,
+  "safe_paths_no_duplicates_or_symlinks": true,
+  "runtime_data_DLL_keymap_license_files_preserved": 79,
+  "full_IT_EN_HTML_PDF_manuals_preserved": 8,
+  "EXE_sha256": "06fac9bd3767a469c3740a1031fddfa184c9ee3192d9b9187483ef876407823f",
+  "D64_sha256": "3beda9eed3208546833ffbbc6b64a2baff16547d6bd7b75539431c0aedfe9d7d",
+  "standard_launchers_exact_to_tested_FLUIDO_profiles": true,
+  "source": {
+    "member": "plus64-usagi/SORGENTI/plus64-usagi-sorgenti-completi-2026-11-27.zip",
+    "sha256": "bac00620e47111f737cf6ee4707da85f0296e03a6362651a38c1b00122af8792",
+    "entries": 4524,
+    "manifest_payload_files_verified": 4523,
+    "current_game_files_exact": 94,
+    "C_CXX_H_AM_exact_to_corresponding_sentiero_source": 3148,
+    "CRC": "PASS"
+  },
+  "no_native_Windows_hardware_or_gameplay_test_claimed": true
+}
