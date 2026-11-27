@@ -1,0 +1,455 @@
+{
+  "status": "PASS-combined-final-tavern-entry-exit-repeat-two-native-guests",
+  "D64_sha256": "136b1db5254f26e14bad52c79c396bdbf5f40cc7a0a9d5aa23b2d7fd3aed7f2c",
+  "MAIN_sha256": "f18f0d95100f4fc66eccd22ddea6983f76f77d392f986b8648225909a58c88b4",
+  "cold_VM_method2_sha256": "1039d7a7e2e0e6dccaba2bc9da050e6ead9ffd84cc858b92e8606b8191775a05",
+  "guest_bytes": 81920,
+  "root_cause": "The original game uses $94 as a source-pointer high byte. Bit 7 is also the Plus/4 KERNAL pending IEC-output-byte flag. Late scene 6 leaves $94=$80; CLALL/LISTEN can flush stale $95 before selecting device 8, producing LOAD A=$05/ST=$80 and the latched single-colour error screen. The helper clears $94 after workspace backup and before ROM I/O. The existing loader then restores the game byte.",
+  "fix_receipt": "/workspace/work/usagi-bugs-012/integration/build-final-002/link/TAVERN_LOAD_BUILD.json",
+  "fix_receipt_sha256": "34a798cc8582ab66ddd531a934f341c7b1a02a281497fdf704ee61ce7171713c",
+  "unchanged_runtime": true,
+  "source_helper_bytes": 7,
+  "extra_cycles_per_scene_LOAD": 8,
+  "additional_guest_bytes": 0,
+  "baseline_reproduction": [
+    {
+      "model": "c16",
+      "proof": "/workspace/work/usagi-bugs-012/tavern/natural-route-c16-06/PROOF.json",
+      "proof_sha256": "c43c9ebc48b82e7ee1277290c382976f182de8b0daebd3a4cbbf54473e59aacd",
+      "failed_PC": 52637,
+      "ml_error": 128,
+      "LOAD_A": 5,
+      "LOAD_P": 49,
+      "LOAD_ST": 128,
+      "uniform_colour_BMP": "/workspace/work/usagi-bugs-012/tavern/natural-route-c16-06/unexpected-after-door.bmp"
+    },
+    {
+      "model": "plus4",
+      "proof": "/workspace/work/usagi-bugs-012/tavern/natural-route-plus4-06/PROOF.json",
+      "proof_sha256": "d3d309f88fe790c19a4f92d6389f7392d2feda17994d093ffde37834bfd4d0aa",
+      "failed_PC": 52637,
+      "ml_error": 128,
+      "LOAD_A": 5,
+      "LOAD_P": 49,
+      "LOAD_ST": 128,
+      "uniform_colour_BMP": "/workspace/work/usagi-bugs-012/tavern/natural-route-plus4-06/unexpected-after-door.bmp"
+    }
+  ],
+  "final_native_cold_tests": [
+    {
+      "model": "c16",
+      "status": "PASS",
+      "proof": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/PROOF.json",
+      "proof_sha256": "3f7e9f2921b62e9bdd2f00084f2e2ce981511c3a2f82f83c0c9acbf82a5aada5",
+      "COMMANDS_sha256": "8904a88da31efcfa436a3ca673dcef728e0b19970399416c127cb0ed244410ca",
+      "single_autostart_no_reattach_no_undump": true,
+      "monitor_writes_only_initial_AC6_and_explicit_NPC_health_QA": true,
+      "monitor_94_writes": 0,
+      "monitor_hero_camera_code_or_navigation_writes": 0,
+      "monitor_write_count": 13,
+      "original_game_94_restored": {
+        "before": 128,
+        "after": 128
+      },
+      "original_world_walk_door_x": 1262,
+      "original_scene_flow": [
+        6,
+        7,
+        8,
+        7,
+        8
+      ],
+      "captures": [
+        {
+          "name": "first-publish",
+          "scene": 6,
+          "loaded": 6,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 22856193,
+            "a": 255,
+            "x": 167,
+            "y": 35,
+            "sp": 243,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/first-publish.vsf",
+          "snapshot_sha256": "606e4373ddf33ebdb44d05b1db71c9b5e33565a3fc24f8db5de9153743d9ddc6",
+          "RAM80_sha256": "d9675c654d399e60eb32201cee35316bfb94fa37e0e050d665e40ec98621a39a"
+        },
+        {
+          "name": "actual-door-script",
+          "scene": 6,
+          "loaded": 6,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 66081931,
+            "a": 0,
+            "x": 0,
+            "y": 0,
+            "sp": 251,
+            "pc": 20591,
+            "p": 35
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/actual-door-script.vsf",
+          "snapshot_sha256": "b030c8fe13b6fb4ec50231f29abbebe81026f0d1a82cfcca3c90f40154e3a201",
+          "RAM80_sha256": "bc3a31360003d4d779623f0ab456dede8fee705e56b70ce7b6665dbaeb53e77d"
+        },
+        {
+          "name": "door-boundary-0xca49",
+          "scene": 7,
+          "loaded": 6,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 66087958,
+            "a": 174,
+            "x": 0,
+            "y": 7,
+            "sp": 250,
+            "pc": 51785,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/door-boundary-0xca49.vsf",
+          "snapshot_sha256": "41011c7f68c65cab30dd182ba88d19a58ff9e139e340e0c2e9f6e86475497ed3",
+          "RAM80_sha256": "c337708af5a5fc908965976344a7817faa49b36b71374ab23551f5b144e33ec5"
+        },
+        {
+          "name": "door-boundary-0x5afd",
+          "scene": 7,
+          "loaded": 7,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 66415281,
+            "a": 174,
+            "x": 0,
+            "y": 7,
+            "sp": 250,
+            "pc": 23293,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/door-boundary-0x5afd.vsf",
+          "snapshot_sha256": "a5525886ff1048bb2a08f1f04ec06a084c371229ed1c537a65fcc2285227181b",
+          "RAM80_sha256": "7ac7e178247bd36a19c0fe5e4b4f768402482a0d7e1553dfaf83ba894130690f"
+        },
+        {
+          "name": "door-boundary-0x3869",
+          "scene": 7,
+          "loaded": 7,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 66936420,
+            "a": 0,
+            "x": 2,
+            "y": 63,
+            "sp": 255,
+            "pc": 14441,
+            "p": 51
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/door-boundary-0x3869.vsf",
+          "snapshot_sha256": "a758813570d5f5aa2dd69bbc0d7851d676189e2d8b75ee74f3ba91f689bc59d8",
+          "RAM80_sha256": "9cdae693cc91ff0a7cd22e806f4836b11cdde2e43dfa80f29e2e6f65dc4fb225"
+        },
+        {
+          "name": "after-160",
+          "scene": 7,
+          "loaded": 7,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 72611405,
+            "a": 255,
+            "x": 128,
+            "y": 35,
+            "sp": 229,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/after-160.vsf",
+          "snapshot_sha256": "892a01c673fc4d6578955713e2df1a583652b2da4f3e768931c221f518cbc0fd",
+          "RAM80_sha256": "b3093dffe92473487a82833fa3b705258f9309aaa3f1f270b3df754a5ee2d466"
+        },
+        {
+          "name": "transition-1-scene8",
+          "scene": 8,
+          "loaded": 8,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 92049598,
+            "a": 255,
+            "x": 37,
+            "y": 35,
+            "sp": 239,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/transition-1-scene8.vsf",
+          "snapshot_sha256": "f7cb28163c75aaec9c67ea05c1b41fd5e7c0b8f352bd73941e53082668635a00",
+          "RAM80_sha256": "9bb6296e989ce3fd711b5159e2af5a8937d8df74098c8d62d27e83589f9ad7e5"
+        },
+        {
+          "name": "transition-2-scene7",
+          "scene": 7,
+          "loaded": 7,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 95076277,
+            "a": 255,
+            "x": 11,
+            "y": 35,
+            "sp": 239,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/transition-2-scene7.vsf",
+          "snapshot_sha256": "5f3ade46c091a257dd657cac97003a0b81aa6a8b990544745168cc35e311f4d2",
+          "RAM80_sha256": "9872c00630fe6fd02c7eced50f3a306f4fc94ce718d8d928a3302de61d43d8bf"
+        },
+        {
+          "name": "transition-3-scene8",
+          "scene": 8,
+          "loaded": 8,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 120218974,
+            "a": 255,
+            "x": 33,
+            "y": 35,
+            "sp": 239,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-c16-06/transition-3-scene8.vsf",
+          "snapshot_sha256": "78b9616759957381fb8c7830bad3dfa5c6f92a51d47b6e4000c71e5362e3b008",
+          "RAM80_sha256": "7d11c201b1cf066f17739f452663b4769b10f668901206449cd057ed0dd6d7c1"
+        }
+      ]
+    },
+    {
+      "model": "plus4",
+      "status": "PASS",
+      "proof": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/PROOF.json",
+      "proof_sha256": "1d936d8ae8cfa7805ccb67ca376ad6a99f69d11231e79452221d297d664eb62f",
+      "COMMANDS_sha256": "35b65f57b3eac50e4ccde7393aa8046346141ecb326efbab36f35c85d90a0340",
+      "single_autostart_no_reattach_no_undump": true,
+      "monitor_writes_only_initial_AC6_and_explicit_NPC_health_QA": true,
+      "monitor_94_writes": 0,
+      "monitor_hero_camera_code_or_navigation_writes": 0,
+      "monitor_write_count": 13,
+      "original_game_94_restored": {
+        "before": 128,
+        "after": 128
+      },
+      "original_world_walk_door_x": 1262,
+      "original_scene_flow": [
+        6,
+        7,
+        8,
+        7,
+        8
+      ],
+      "captures": [
+        {
+          "name": "first-publish",
+          "scene": 6,
+          "loaded": 6,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 22856193,
+            "a": 255,
+            "x": 167,
+            "y": 35,
+            "sp": 243,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/first-publish.vsf",
+          "snapshot_sha256": "710c601cdeb6b8965616b19f911aad2b7f8c9d35e1aad5e64192e552c0ddf632",
+          "RAM80_sha256": "d31fb8323556c17b0d7ab22fdceaf210b1afb36f6d3471e3e8996b57f0cf3bc0"
+        },
+        {
+          "name": "actual-door-script",
+          "scene": 6,
+          "loaded": 6,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 66081931,
+            "a": 0,
+            "x": 0,
+            "y": 0,
+            "sp": 251,
+            "pc": 20591,
+            "p": 35
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/actual-door-script.vsf",
+          "snapshot_sha256": "53121b369972c491cead8c7482b50a6d2a4e26806b2e5fc50749352f54785926",
+          "RAM80_sha256": "2cc35bb67e2faee32ace8173f50c6fad3768fb31a05007af71c9ca5c5b389a9c"
+        },
+        {
+          "name": "door-boundary-0xca49",
+          "scene": 7,
+          "loaded": 6,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 66087958,
+            "a": 174,
+            "x": 0,
+            "y": 7,
+            "sp": 250,
+            "pc": 51785,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/door-boundary-0xca49.vsf",
+          "snapshot_sha256": "fde666d45464ca45b0f711ffbe2f6a59acb8355d8157ec1081da987249334dfc",
+          "RAM80_sha256": "e999efb9b1b44c774ac78f5fed7dbddadba7c637151ad6b89c9b182e7e56db4b"
+        },
+        {
+          "name": "door-boundary-0x5afd",
+          "scene": 7,
+          "loaded": 7,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 66415281,
+            "a": 174,
+            "x": 0,
+            "y": 7,
+            "sp": 250,
+            "pc": 23293,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/door-boundary-0x5afd.vsf",
+          "snapshot_sha256": "49dce787016cd0d4556e76747b9af8ef01f58229349d9c20ef308cc31ee635a1",
+          "RAM80_sha256": "5a4f4f0a449005a2049fbeff53db36d825a6798f2528029a0a8ed4a55201b976"
+        },
+        {
+          "name": "door-boundary-0x3869",
+          "scene": 7,
+          "loaded": 7,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 66936420,
+            "a": 0,
+            "x": 2,
+            "y": 63,
+            "sp": 255,
+            "pc": 14441,
+            "p": 51
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/door-boundary-0x3869.vsf",
+          "snapshot_sha256": "3eb5ef9ba72efb58ba9ba174264dd5e7f26d43b338366de734897055180d477b",
+          "RAM80_sha256": "2ec7146a008b39206d1340bb1c60156fdbac842f8bef1b27684fc326db188639"
+        },
+        {
+          "name": "after-160",
+          "scene": 7,
+          "loaded": 7,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 72611405,
+            "a": 255,
+            "x": 128,
+            "y": 35,
+            "sp": 229,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/after-160.vsf",
+          "snapshot_sha256": "4e09d8fb4bb4d5853da6c3c3db46d4ba2cfc6698bfa10202741c31501316689e",
+          "RAM80_sha256": "632a08ea863bb8607777f8fa891ff867d80e73cf4876b9e839fc75b7cb21eaaf"
+        },
+        {
+          "name": "transition-1-scene8",
+          "scene": 8,
+          "loaded": 8,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 92049598,
+            "a": 255,
+            "x": 37,
+            "y": 35,
+            "sp": 239,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/transition-1-scene8.vsf",
+          "snapshot_sha256": "055dd4920b0a4c752147365153d86b19df6ad780861d9ce0370049d9b71cb07e",
+          "RAM80_sha256": "78c63336374444eda94b9af2dca3208675979fcc1d1bdc63455a08cf10521ac2"
+        },
+        {
+          "name": "transition-2-scene7",
+          "scene": 7,
+          "loaded": 7,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 95076277,
+            "a": 255,
+            "x": 11,
+            "y": 35,
+            "sp": 239,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/transition-2-scene7.vsf",
+          "snapshot_sha256": "5e5eff80408f4976851b9eb0a0a99f72902b8d5ffa683b9e0cae5ba00a5cce6e",
+          "RAM80_sha256": "8fca368d9160aaafe291650563c93186cb444436de097884c9afebba475b2cd1"
+        },
+        {
+          "name": "transition-3-scene8",
+          "scene": 8,
+          "loaded": 8,
+          "ready": 1,
+          "error": 0,
+          "scenery_formats": 23,
+          "cpu": {
+            "clock": 120218974,
+            "a": 255,
+            "x": 33,
+            "y": 35,
+            "sp": 239,
+            "pc": 10815,
+            "p": 181
+          },
+          "snapshot": "/workspace/work/usagi-bugs-012/tavern/combined-route-plus4-06/transition-3-scene8.vsf",
+          "snapshot_sha256": "78928a73ca18195e79a9ae5caf5388ba2ffd799848b8080c67c12e32305ab075",
+          "RAM80_sha256": "e1a87031cb401b78429356f479d7df9007c4c77b5a40a98b839feaf03042cca7"
+        }
+      ]
+    }
+  ],
+  "independent_Wine_causal_A_B": "/workspace/work/usagi-bugs-012/host-audit/ENTRY_CAUSE_PROOF.json",
+  "independent_Wine_causal_A_B_sha256": "3d11bb3a405b972e0ffa911a7886b5d942be2541e4143beee2017cc7cf390039",
+  "scope": "The initial source scene 6 is selected through AC at the genuine GAME constructor. Ordinary right input advances the original source/camera stream to the generated door at X=1262, then UP enters. Explicit NPC-active-flag clears and health-only QA writes avoid combat stalls. One cold disk attachment remains in use through 6→7→8→7→8. No monitor writes to $94, hero/camera/map/code/PC/register state occur. These are bounded engine/LOAD tests, not a whole campaign, physical-hardware or native-Windows qualification."
+}

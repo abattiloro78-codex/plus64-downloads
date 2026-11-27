@@ -1,0 +1,41 @@
+{
+  "status": "PASS-complete-R2-package-assembly-CRC",
+  "ZIP": "/workspace/work/usagi-bugs-012/delivery-full/plus64-usagi-completo-r2-2026-11-27.zip",
+  "ZIP_bytes": 53403430,
+  "ZIP_sha256": "36a497134ee7059b29173c1a1cbb2a1a1da93291f5237c16546d2d08117d3516",
+  "source_ZIP": "/workspace/work/usagi-bugs-012/delivery-full/plus64-usagi-sorgenti-r2-2026-11-27.zip",
+  "source_ZIP_bytes": 28258387,
+  "source_ZIP_sha256": "749d23fd1554488e1c8e0cda802434a69ce753da2295b73af96d4a2254da9ab7",
+  "members": 362,
+  "source_members": 4541,
+  "version": {
+    "status": "ASSEMBLED-complete-R2-with-current-game-and-existing-runtime",
+    "date": "2026-11-27",
+    "guest_bytes": 81920,
+    "D64_sha256": "136b1db5254f26e14bad52c79c396bdbf5f40cc7a0a9d5aa23b2d7fd3aed7f2c",
+    "MAIN_sha256": "f18f0d95100f4fc66eccd22ddea6983f76f77d392f986b8648225909a58c88b4",
+    "windows_exe_sha256": "06fac9bd3767a469c3740a1031fddfa184c9ee3192d9b9187483ef876407823f",
+    "source_archive": "plus64-usagi-sorgenti-r2-2026-11-27.zip",
+    "source_archive_sha256": "749d23fd1554488e1c8e0cda802434a69ce753da2295b73af96d4a2254da9ab7",
+    "runtime_code_modified": false,
+    "game_code_modified": true,
+    "previous_updates_required": false,
+    "fixed": [
+      "tavern-entry-load",
+      "rabbit-samurai-sword-colours",
+      "white-peach-black-trunks"
+    ],
+    "prior_scenery09_10_preserved": true,
+    "focused_gameplay_checks": true,
+    "focused_gameplay_hosts": [
+      "c16",
+      "plus4"
+    ],
+    "focused_gameplay_environment": "Linux",
+    "full_campaign_claimed": false,
+    "native_Windows_playtest": false,
+    "physical_hardware_playtest": false
+  },
+  "tavern_proof": "/workspace/work/usagi-bugs-012/tavern/FINAL.json",
+  "builder_sha256": "139f37bd8475a56999ee92ec30b7899186b85aef57dfdadf21724292b932e889"
+}

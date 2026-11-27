@@ -1,0 +1,41 @@
+{
+  "status": "PASS-real-scenery23-live-peach-shared-trunk-brown-to-black",
+  "scope": "Verify the new P64B artwork in the real running scenery23 renderer.",
+  "source_snapshot": "/workspace/work/usagi-bugs-012/peach/live-peach-disabled-NPC-c16/peach-visible.vsf",
+  "snapshot_capability": 23,
+  "model": "c16",
+  "original_D64_sha256": "3beda9eed3208546833ffbbc6b64a2baff16547d6bd7b75539431c0aedfe9d7d",
+  "packet_sha256": "e0cd21b101ac5de5381d85fb0df8726a17109a5f8f2b33ac32413c441f512126",
+  "packet_bytes": 2938,
+  "QA_guest_assignments": [
+    "B05 packet bytes at current metadata address",
+    "B05 node length to new packet size"
+  ],
+  "initial_view_QA": "Current cold scene05 constructor followed by ordinary-right input, NPC active flags disabled at publication boundaries, health replenished; source graphics and camera unmodified.",
+  "live_stem_pixel_colours": {
+    "before": {
+      "8": 448
+    },
+    "after": {
+      "0": 448
+    }
+  },
+  "stem_world_box": [
+    1264,
+    104,
+    1272,
+    160
+  ],
+  "source_glyph": 57,
+  "native_source_pair": 2,
+  "native_source_colour": 0,
+  "root_cause": "Peach trunk uses shared glyph39 below the dedicated D4..E7 branches; generic soil recolour painted it native08.",
+  "fixed_relevant_source_font_bytes_codes_inks_and_camera_context_exact": true,
+  "live_tree_nonstem_pixels_exact": true,
+  "live_stem_pixels_changed": 448,
+  "MAIN_code_core_runtime_not_modified": true,
+  "guest_bytes": 81920,
+  "snapshot_or_QA_fixture_shipped": false,
+  "native_Windows_or_physical_playtest": false,
+  "full_campaign_playtest": false
+}

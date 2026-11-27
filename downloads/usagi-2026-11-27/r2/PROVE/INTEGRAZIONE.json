@@ -1,0 +1,84 @@
+{
+  "status": "PASS-three-graphics-and-tavern-loader-fixes-integrated-and-source-rebuilt",
+  "D64_sha256": "136b1db5254f26e14bad52c79c396bdbf5f40cc7a0a9d5aa23b2d7fd3aed7f2c",
+  "MAIN_sha256": "f18f0d95100f4fc66eccd22ddea6983f76f77d392f986b8648225909a58c88b4",
+  "VM_method2_sha256": "1039d7a7e2e0e6dccaba2bc9da050e6ead9ffd84cc858b92e8606b8191775a05",
+  "windows_exe_sha256": "06fac9bd3767a469c3740a1031fddfa184c9ee3192d9b9187483ef876407823f",
+  "source_manifest_sha256": "c849c65475fae5571c649eafc1ee85ee4eed3c6a24a56b1877fa4c7f154c495f",
+  "source_files": 107,
+  "source_manifest_all_files_verified": true,
+  "source_forward_rebuild_from_extracted_ZIP_python_no_site": true,
+  "changed_disk_files": [
+    "ASSETS",
+    "MAIN",
+    "B02",
+    "B04",
+    "B05",
+    "B15"
+  ],
+  "MAIN_changed_addresses": [
+    52156,
+    52157,
+    53183,
+    53185,
+    53186,
+    53187,
+    53188,
+    53189
+  ],
+  "other13_backgrounds_and_bootstrap_exact": true,
+  "source_bank_and_other_AUX_exact": true,
+  "VM_slot": [
+    736,
+    7030
+  ],
+  "VM_method2_bytes": 6294,
+  "guest_MAIN_bytes": 65536,
+  "guest_AUX_bytes": 16384,
+  "guest_bytes": 81920,
+  "BG_capacity": 7376,
+  "BG_max_bytes": 7376,
+  "new_platform_or_core_changes": false,
+  "tavern_final_combined_cold_tests": [
+    "c16",
+    "plus4"
+  ],
+  "room_flow": [
+    6,
+    7,
+    8,
+    7,
+    8
+  ],
+  "approved_sprites_contexts_unchanged": 804,
+  "additional_sword_C_checks": 2604,
+  "peach_stems_fixed": 6,
+  "proofs": {
+    "tavern": {
+      "path": "/workspace/work/usagi-bugs-012/tavern/FINAL.json",
+      "sha256": "d67f7421fda565af2a717449861c53e8621cd493dd987d319ad7dbac7f51b861",
+      "status": "PASS-combined-final-tavern-entry-exit-repeat-two-native-guests"
+    },
+    "samurai": {
+      "path": "/workspace/work/usagi-bugs-012/rabbit/final-005/PROOF.json",
+      "sha256": "68c79b8360f7320d4adcb723a1d99a541cad11f7b997ecfc24ea60b8ce400420",
+      "status": "PASS-sword-rabbit-material-routing-C-oracle"
+    },
+    "peach": {
+      "path": "/workspace/work/usagi-bugs-012/peach/candidate-002/PROOF.json",
+      "sha256": "55f53b6f5a57928c187df218ce4fa641b16110f860b1095cd4b39d7d2d782149",
+      "status": "PASS-approved-peach-black-branches-and-shared-trunk-C-render"
+    },
+    "peach_live": {
+      "path": "/workspace/work/usagi-bugs-012/peach/candidate-002/LIVE_RENDER_PROOF.json",
+      "sha256": "fe2acbc4256c9a1d4606f569d26e9aec4d349c118999e0635ea446220674c4fc",
+      "status": "PASS-real-scenery23-live-peach-shared-trunk-brown-to-black"
+    },
+    "source": {
+      "path": "/workspace/work/usagi-bugs-012/integration/SOURCE_QA.json",
+      "sha256": "c4729977868d3e438b22b797458d60ede94c9aa8168eeae356b7d555f9d05379",
+      "status": "PASS-extracted-source-ZIP-python3-S-forward-rebuild-byte-exact"
+    }
+  },
+  "scope": "Actual final combined D64. Bounded original-controller entry/exit tests on Linux with explicit NPC/health QA fixture; independent Wine causal A/B, C artwork oracles and source rebuild checks. No full-campaign, physical-hardware or Windows-native playtest claim."
+}
